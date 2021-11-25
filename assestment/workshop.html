@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop countries</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/paginate.css">
+
+</head>
+<body style="background: #f4f4f4">
+    
+    <main>
+        <div class="container">
+            <div class="container py-2 ">
+                <h1 class="text-center">Countries</h1>
+            </div>
+
+            <div class="input-group form-group py-4">
+                <label for="searchBox">Filter: </label>
+                <input type="search" id="searchBox" placeholder="Filter...">
+            </div>
+
+            
+            <table class="table table-striped table-dark" id="table">
+                <thead class="thead-dark">
+                    <tr id="haha">
+                        <th scope="col">Name</th>
+                        <th scope="col">Capital</th>
+                        <th scope="col">Region</th>
+                        <th scope="col">Language</th>
+                        <th scope="col">Population</th>
+                        <th scope="col">Flag</th>
+                    </tr>
+                </thead>
+                
+                <tbody id='output'>
+
+                </tbody>
+            </table>
+        </div>
+        
+    </main>
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Bootbox-->
+    <script src="js/bootbox.min.js"></script>
+    <script src="js/bootbox.locales.min.js"></script>
+    <!-- paginate-->
+    <script src="js/paginate.js"></script>
+
+    <!--Main JS-->
+    <script src= "js/main.js"></script>
+
+
+</body>
+</html>
