@@ -7,7 +7,14 @@
     <title>Workshop countries</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/paginate.css">
-
+    <style>
+        #map{
+            width:450px;
+            height:450px;
+            display:block;
+        }
+      
+    </style>
 </head>
 <body style="background: #f4f4f4">
     
@@ -32,6 +39,7 @@
                         <th scope="col">Language</th>
                         <th scope="col">Population</th>
                         <th scope="col">Flag</th>
+                        <th scope="col">Borders</th>
                     </tr>
                 </thead>
                 
@@ -39,9 +47,30 @@
 
                 </tbody>
             </table>
+
+            <button type="button" id="get_borders" class="btn btn-primary">Get borders</button>
+            <table class="table table-striped table-dark" id="tableBorder">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Border(s)</th>
+                        <th scope="col">Translation Spanish</th>
+                    </tr>
+                </thead>
+                
+                <tbody id='output_border'>
+
+                </tbody>
+
+            </table>
+            <div id="map"> </div>
         </div>
         
     </main>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-bWSIyXs86vLDL_cmKHRaV0BGJe9RQwQ&callback=initMap">
+    </script>
 
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -57,7 +86,9 @@
 
     <!--Main JS-->
     <script src= "js/main.js"></script>
-
+    <script>
+    
+    </script>
 
 </body>
 </html>
